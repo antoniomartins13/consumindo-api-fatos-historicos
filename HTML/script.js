@@ -17,7 +17,7 @@ function getData() {
     .then(res => res.json())
     .then(data => {
       if (data.error) {
-        alert('ANO INVÁLIDO OU DIGITADO INCORRETAMENTE');
+        alert("Ano inválido ou digitação errada, tente um ano de 1930 a 2023");
       }
       atribuirCampo(data);
     });

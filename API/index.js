@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
     res.json({ fato: fato });
   } else {
-    res.status(404).json({ error: "Ano inválido ou digitação errada" });
+    res.status(404).json({ error: "Ano inválido ou digitação errada, tente um ano de 1930 a 2023" });
   }
 });
 
